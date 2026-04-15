@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Você está convidado(a) PARA O CAFÉZÃO ☕</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #4a3bcf, #838383be);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        text-align: center;
+        max-width: 400px;
+        animation: aparecer 2s ease;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .botao {
+        margin-top: 20px;
+        padding: 12px 25px;
+        background-color: #6f4e37;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .botao:hover {
+        background-color: #5a3d2b;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<script>
+function responder() {
+    alert("Jaé, paizão! Te espero às 16:40 ☕");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Convite para o CAFÉZÃO DOS CRIA ☕</h1>
+
+    <p>
+        Cafézin hoje?<br>
+        às <strong>16:40</strong>? 
+    </p>
+
+    <button class="botao" onclick="responder()">
+        Aceitar convite ☕
+    </button>
+
+</div>
+
+</body>
+</html>
